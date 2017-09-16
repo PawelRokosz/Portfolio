@@ -1,0 +1,15 @@
+// ***************
+// Wrapper
+// ***************
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+
+  @include respond-at(640px){
+    // position: relative;
+    // flex-direction: column-reverse;
+  }
+}

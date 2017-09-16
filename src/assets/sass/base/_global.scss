@@ -1,0 +1,8 @@
+body{
+  font-size: 16px;
+  font-family: $main-font;
+
+  @include respond-at(640px){
+    font-size: 12px;
+  };
+}

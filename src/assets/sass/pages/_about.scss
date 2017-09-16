@@ -1,0 +1,19 @@
+// ***************
+// Section
+// ***************
+
+.about {
+
+  .main-text {
+    text-align: center;
+    font-size: 2em;
+    line-height: 2em;
+
+    &__important {
+      padding: 5px;
+      background-color: #eef61f;
+      color: #5197a5;
+      font-weight: bold;
+    }
+  }
+}
