@@ -87,20 +87,24 @@
 
       &__link {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         width: 100%;
         height: 100px;
+        padding-left: 20px;
         border-bottom: 1px solid $main-color;
         cursor: pointer;
-
-        @include respond-at(640px){
-          height: 100%;
-        }
+        transition: background-color 0.3s ease;
 
         &:hover {
           background-color: $secondary-color;
           color: $main-color;;
+        }
+
+        @include respond-at(640px){
+          justify-content: center;
+          height: 100%;
+          padding-left: 0;
         }
 
         .link {
@@ -120,7 +124,7 @@
       }
     }
 
-    .contact {
+    .footer {
       display: flex;
       justify-content: center;
       align-items: center;

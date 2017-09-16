@@ -4,6 +4,8 @@
 
 .section {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   background: $main-color;
@@ -23,5 +25,10 @@
       color: $main-color;
       font-weight: bold;
     }
+  }
+
+  .secondary-text {
+    text-align: center;
+    font-size: 1em;
   }
 }
