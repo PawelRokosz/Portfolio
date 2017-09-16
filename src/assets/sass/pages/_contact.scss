@@ -6,10 +6,20 @@
   flex-direction: column;
 
   &__footer {
-    width: 50%;
+    position: relative;
     margin-top: 50px;
     padding-top: 10px;
-    border-top: 1px solid $secondary-color;
+    // border-top: 1px solid $secondary-color;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 25%;
+      top: 0;
+      height: 1px;
+      width: 50%;
+      border-bottom: 1px solid $secondary-color;
+    }
   }
 
   &__links {
@@ -17,9 +27,16 @@
     justify-content: center;
     margin-top: 10px;
 
-    &>*:not(:last-child) {
+    & > *:not(:last-child) {
       margin-right: 10px;
     }
+  }
 
+  &__link {
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
