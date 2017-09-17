@@ -1,0 +1,113 @@
+// ***************
+// Projects
+// ***************
+
+.projects {
+  flex-direction: column;
+
+  &__container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 25%;
+      top: 0;
+      height: 1px;
+      width: 50%;
+      border-bottom: 1px solid $secondary-color;
+    }
+  }
+
+  .project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 7px;
+    box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.3);
+
+    @include respond-at(1100px){
+      width: 85%;
+    }
+
+    @include respond-at(900px){
+      width: 95%;
+    }
+
+    @include respond-at(800px){
+      height: 250px;
+    }
+
+    &__preview {
+      height: 100%;
+      width: 100%;
+      margin-right: 20px;
+      background: red;
+      border-radius: 7px;
+
+      @include respond-at(600px){
+        display: none;
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      width: 100%;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 2em;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    &__subtext {
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+    &__footer {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 25%;
+        top: -10px;
+        height: 1px;
+        width: 50%;
+        border-bottom: 1px solid $main-color;
+      }
+    }
+
+    &__link {
+      width: 100px;
+      padding: 7px 0;
+      border-radius: 7px;
+      box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+      text-align: center;
+      font-size: 1em;
+      background: black;
+      color: white;
+
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+}

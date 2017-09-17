@@ -26,15 +26,23 @@
     line-height: 2em;
 
     &__important {
-      padding: 5px;
+      padding: 5px 10px;
       background-color: $secondary-color;
       color: $main-color;
       font-weight: bold;
+      border-radius: 7px;
+      box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
     }
   }
 
   .secondary-text {
     text-align: center;
     font-size: 1em;
+  }
+
+  .info-text {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 1.2em;
   }
 }
