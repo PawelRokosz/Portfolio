@@ -52,9 +52,23 @@
       margin-right: 20px;
       background: red;
       border-radius: 7px;
+      background-position: top;
+      background-size: cover;
 
       @include respond-at(600px){
         display: none;
+      }
+
+      &--1 {
+        background-image: url('../images/project_1.png');
+      }
+
+      &--2 {
+        background-image: url('../images/project_2.png');
+      }
+
+      &--3 {
+        background-image: url('../images/project_3.png');
       }
     }
 

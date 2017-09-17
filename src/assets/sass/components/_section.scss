@@ -8,11 +8,10 @@
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  padding: 0 30px;
+  padding: 30px 30px;
   background: $main-color;
 
   @include respond-at(800px){
-    padding-top: 20px;
     padding-bottom: 70px;
   }
 
