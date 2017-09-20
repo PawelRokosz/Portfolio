@@ -46,11 +46,27 @@
       height: 250px;
     }
 
+    &__hover {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 7px;
+      background: rgba(white, 0.4);
+      opacity: 0;
+      color: black;
+      transition: all 0.3s ease;
+    }
+
     &__preview {
+      position: relative;
       height: 100%;
       width: 100%;
       margin-right: 20px;
-      background: red;
       border-radius: 7px;
       background-position: top;
       background-size: cover;
@@ -74,6 +90,10 @@
       &--4 {
         background-image: url('../images/project_4.png');
         background-position: left;
+      }
+
+      &:hover > *:first-child {
+        opacity: 1;
       }
     }
 
@@ -123,6 +143,11 @@
       font-size: 1em;
       background: black;
       color: white;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: rgba(black, 0.7);
+      }
 
       &:first-child {
         margin-right: 10px;
