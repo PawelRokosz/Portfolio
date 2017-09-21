@@ -5,7 +5,6 @@ const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
 const imagemin = require('gulp-imagemin');
 const cleanCSS = require('gulp-clean-css');
-const changed = require('gulp-changed');
 const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
