@@ -9,9 +9,9 @@ class Main extends React.Component {
   render() {
     return (
       <Switch>
-        <Route exact path='Portfolio/' component={About} />
-        <Route path='Portfolio/projects' component={Projects} />
-        <Route path='Portfolio/contact' component={Contact} />
+        <Route exact path='/Portfolio/' component={About} />
+        <Route path='/Portfolio/projects' component={Projects} />
+        <Route path='/Portfolio/contact' component={Contact} />
       </Switch>
     );
   }

@@ -13,17 +13,17 @@ class Nav extends React.Component {
         <div className="menu">
           <div className="links">
 
-            <Link to='Portfolio/' className="links__link">
+            <Link to='/Portfolio/' className="links__link">
                 <i className="fa fa-user-circle-o fa-lg link" aria-hidden="true"></i>
                 <span className="links__text">About</span>
             </Link>
 
-            <Link to='Portfolio/projects' className="links__link">
+            <Link to='/Portfolio/projects' className="links__link">
                 <i className="fa fa-th-large fa-lg link" aria-hidden="true"></i>
                 <span className="links__text">Projects</span>
             </Link>
 
-            <Link to='Portfolio/contact' className="links__link">
+            <Link to='/Portfolio/contact' className="links__link">
                 <i className="fa fa-paper-plane-o fa-lg link" aria-hidden="true"></i>
                 <span className="links__text">Contact</span>
             </Link>
