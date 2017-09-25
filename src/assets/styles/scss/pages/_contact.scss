@@ -1,0 +1,45 @@
+// ***************
+// Contact
+// ***************
+
+.contact {
+  flex-direction: column;
+
+  &__footer {
+    position: relative;
+    margin-top: 50px;
+    padding-top: 10px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 25%;
+      top: 0;
+      height: 1px;
+      width: 50%;
+      border-bottom: 1px solid $secondary-color;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    & > *:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    transition: transform 0.5s ease;
+
+    &>* {
+      color: $helper-color;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

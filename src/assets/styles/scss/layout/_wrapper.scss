@@ -1,0 +1,13 @@
+// ***************
+// Wrapper
+// ***************
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  padding-left: 150px;
+
+  @include respond-at(800px){
+    padding-left: 0;
+  }
+}

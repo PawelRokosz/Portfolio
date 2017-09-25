@@ -1,0 +1,49 @@
+// ***************
+// Section
+// ***************
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 30px;
+  background: linear-gradient(135deg, #46258d 0%,#5197a5 100%);
+
+  @include respond-at(800px){
+    padding-bottom: 70px;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  .main-text {
+    text-align: center;
+    font-size: 2em;
+    line-height: 2em;
+    color: $helper-color;
+
+    &__important {
+      padding: 5px 10px;
+      background-color: $secondary-color;
+      color: $main-color;
+      font-weight: bold;
+      border-radius: 7px;
+      box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3);
+    }
+  }
+
+  .secondary-text {
+    text-align: center;
+    font-size: 1em;
+    color: $helper-color;
+  }
+
+  .info-text {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 1.2em;
+  }
+}
